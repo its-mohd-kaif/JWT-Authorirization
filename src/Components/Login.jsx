@@ -38,7 +38,7 @@ function Login() {
         alert(`Welcome Admin ${user.name}`);
         navigate("/dashboard");
       } else if ("token" in user === false) {
-        alert("Token is not valid");
+        alert("Token is not generated !!!");
       } else if (user.type === "User") {
         alert("User Can Not Go Into Dashboard");
         navigate("/");
